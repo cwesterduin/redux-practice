@@ -2,7 +2,7 @@ const initState = {
     users: [{name: 'Chris'}]
 }
 
-const myReducer = (state=initState, action) => {
+export default function myReducer(state=initState, action) {
     switch(action.type) {
         case 'ADD_USER':
             const newUserList = [...state.users]
@@ -14,5 +14,3 @@ const myReducer = (state=initState, action) => {
             return state;
     }
 }
-
-export default myReducer;
