@@ -1,11 +1,11 @@
 import React from 'react'
-import { Form, UserBadge } from './components'
+import { Form, UserList } from './components'
 
 const App = () => {
     return (
         <>
         <Form/>
-        <UserBadge />
+        <UserList />
         </>
     )
 }

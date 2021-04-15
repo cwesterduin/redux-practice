@@ -1,10 +1,8 @@
 import React from "react"
-import { useSelector } from 'react-redux';
 
-function UserBadge(){
-    const name = useSelector(state => state.name)
+function UserBadge({ name }){
     return (
-        <div>Hello: {name}</div>
+        <div>username: {name}</div>
     )
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
-import { changeName } from '../../actions';
+import { addUser } from '../../actions';
 
 function Form() {
   const [name, setName] = useState("");
@@ -8,7 +8,7 @@ function Form() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    dispatch(changeName(name))
+    dispatch(addUser(name))
     setName("");
   }
 

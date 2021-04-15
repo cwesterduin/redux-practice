@@ -1,1 +1,1 @@
-export const changeName = newName => ({ type: 'CHANGE_NAME', payload: newName })
+export const addUser = newUser => ({ type: 'ADD_USER', payload: newUser })

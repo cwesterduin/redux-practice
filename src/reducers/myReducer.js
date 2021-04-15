@@ -1,12 +1,14 @@
 const initState = {
-    name: 'Chris'
+    users: [{name: 'Chris'}]
 }
 
 const myReducer = (state=initState, action) => {
     switch(action.type) {
-        case 'CHANGE_NAME':
+        case 'ADD_USER':
+            const newUserList = [...state.users]
+            newUserList.push({name: action.payload})
             return ({
-                name: action.payload
+                ...state, users: newUserList
              })
         default:
             return state;
